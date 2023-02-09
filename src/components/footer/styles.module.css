@@ -1,0 +1,17 @@
+.footer {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #fafafa;
+}
+
+.logo:active {
+  color: #fafafa !important;
+}
+
+
+
+.navigationMenu {
+  display: flex;
+  gap: 48px;
+  color: #fafafa !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    gap: 5px;
+    font-size: 18px;
+  }
+
+  .navigationMenu {
+    gap: 30px;
+    font-weight: 700;
+  }
+}

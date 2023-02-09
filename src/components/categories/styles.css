@@ -1,0 +1,32 @@
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  width: 45px;
+  border-radius: 80%;
+  box-shadow: 4px 24px 74px 72px rgba(0, 0, 0, 0.863);
+  background-color: rgb(0, 0, 0);
+  transition: all 0.1s linear;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgb(34, 34, 34);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+}
+
+.swiper-button-next {
+  right: -15%;
+}
+.swiper-button-prev {
+  left: -15%;
+}
+
+.mySwiper:hover .swiper-button-next {
+  right: 0;
+}
+.mySwiper:hover .swiper-button-prev {
+  left: 0;
+}

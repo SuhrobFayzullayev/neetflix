@@ -1,18 +1,29 @@
-import './globals.css'
+"use client";
+import Footer from "@/components/footer";
+import { Header } from "@/components/header";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "bootstrap/dist/css/bootstrap.min.css"
+import "@/styles/reset.css";
+import "@/styles/global.css";
+import { Provider } from "react-redux";
+import { store } from "@/redux/store";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>{children}</body>
+      <body>
+        <Provider store={store}>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <ToastContainer />
+        </Provider>
+      </body>
     </html>
-  )
+  );
 }
