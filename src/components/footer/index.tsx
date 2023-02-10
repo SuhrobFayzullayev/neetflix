@@ -12,7 +12,7 @@ export default function Footer() {
         target="_blank"
         className="text-white"
       >
-        Suhrob Fayzullayev
+        Suhrob Fayzullayev go
       </Link>
     </footer>
   );
