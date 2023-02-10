@@ -43,6 +43,7 @@ export default function Categories({ categories }: PageProps) {
               href={`/${category.id}`}
             >
               {category.name}
+              
             </Link>
           </SwiperSlide>
         ))}
