@@ -3,7 +3,6 @@ import Footer from "@/components/footer";
 import { Header } from "@/components/header";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "bootstrap/dist/css/bootstrap.min.css"
 import "@/styles/reset.css";
 import "@/styles/global.css";
 import { Provider } from "react-redux";

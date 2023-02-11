@@ -10,9 +10,8 @@ export default function Footer() {
       <Link
         href="https://www.linkedin.com/in/suhrob-fayzullayev"
         target="_blank"
-        className="text-white"
       >
-        Suhrob Fayzullayev go
+        Suhrob Fayzullayev
       </Link>
     </footer>
   );

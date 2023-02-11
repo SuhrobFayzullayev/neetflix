@@ -3,10 +3,10 @@ import Link from "next/link";
 import styles from "./styles.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "./styles.css";
+
 type PageProps = {
   categories: {
     name?: string;
@@ -38,12 +38,8 @@ export default function Categories({ categories }: PageProps) {
       >
         {categories?.map((category) => (
           <SwiperSlide key={category.id} className={styles.category}>
-            <Link
-              className={`${styles.category} text-white`}
-              href={`/${category.id}`}
-            >
+            <Link className={`${styles.category}`} href={`/${category.id}`}>
               {category.name}
-              
             </Link>
           </SwiperSlide>
         ))}

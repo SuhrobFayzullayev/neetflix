@@ -7,9 +7,7 @@ import { BsCheckLg } from "react-icons/bs";
 import styles from "./styles.module.css";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { addPlayList, removePlayList } from "@/redux/slice";
-import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
-// import { ToastContainer } from "react-toastify/dist/components";
 export type TypeProps = {
   movie?: {
     id?: number | string;
@@ -40,7 +38,7 @@ function FeaturedMovie({ movie = {}, isCompact = true }: TypeProps) {
         </p>
         <div className={styles.actionButtons}>
           <Link
-            className={`${styles.playButton} text-black`}
+            className={`${styles.playButton}`}
             href={`/movie/${id}`}
             onClick={() =>
               toast.error("Sorry no video available!", {

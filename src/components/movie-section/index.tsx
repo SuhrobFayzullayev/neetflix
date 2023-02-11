@@ -24,7 +24,7 @@ function MoviesSection({ title, movies }: PageProps) {
   return (
     <div className={styles.moviesSection}>
       <h3 className={styles.title}>{title}</h3>
-      {/* <Swiper
+      <Swiper
         loop={false}
         navigation={true}
         modules={[Navigation, Autoplay]}
@@ -64,7 +64,7 @@ function MoviesSection({ title, movies }: PageProps) {
             </Link>
           </SwiperSlide>
         ))}
-      </Swiper> */}
+      </Swiper>
     </div>
   );
 }
