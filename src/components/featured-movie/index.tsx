@@ -38,7 +38,7 @@ function FeaturedMovie({ movie = {}, isCompact = true }: TypeProps) {
         >
           {overview}
         </p>
-        <div >
+        <div className={styles.actionButtons} >
           <Link
             className={`${styles.playButton} text-black`}
             href={`/movie/${id}`}
