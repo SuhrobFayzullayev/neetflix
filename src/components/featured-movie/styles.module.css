@@ -79,8 +79,13 @@
 }
 
 @media (max-width: 576px) {
+  .movieWrapper {
+    margin-top: 40px;
+  }
+  
   .movieTitle {
     font-size: 48px;
+    line-height: 50px;
   }
 
   .overview {

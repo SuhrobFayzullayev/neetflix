@@ -1,3 +1,14 @@
+.header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.headerWrapper {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -8,28 +19,28 @@
   color: #fafafa;
 }
 
-.logo:active {
-  color: #fafafa !important;
-}
-
-
-
 .navigationMenu {
   display: flex;
   gap: 48px;
-  color: #fafafa !important;
+  color: #fafafa;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
+@media (max-width: 768px) {
+  .navigationMenu {
+    gap: 40px;
+  }
+}
+
 @media (max-width: 576px) {
   .logo {
-    gap: 5px;
-    font-size: 18px;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 600;
   }
-
   .navigationMenu {
-    gap: 30px;
-    font-weight: 700;
+    gap: 12px;
+    font-size: 12px !important;
   }
 }
