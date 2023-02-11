@@ -9,7 +9,7 @@ function Header() {
   return (
     <Navbar expand="sm" className="mt-2" variant="dark">
       <Container fluid>
-        <Link className={`${styles.logo} text-white`} href="/">
+        <Link className={`${styles.logo} text-danger`} href="/">
           <FaPlayCircle /> NETFILMS
         </Link>
         <Navbar.Toggle
