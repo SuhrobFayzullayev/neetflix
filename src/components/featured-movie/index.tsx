@@ -50,7 +50,7 @@ function FeaturedMovie({ movie = {}, isCompact = true }: TypeProps) {
           >
             Play
           </Link>
-          {(!selector?.filter((v) => id == v.id)[0]?.check && (
+<!--           {(!selector?.filter((v) => id == v.id)[0]?.check && (
             <button
               className={styles.addAndCheckButton}
               onClick={() =>
@@ -75,7 +75,7 @@ function FeaturedMovie({ movie = {}, isCompact = true }: TypeProps) {
             >
               <BsCheckLg />
             </button>
-          )}
+          )} -->
         </div>
         <div className={styles.moviePoster}>
           <div className={styles.moviePosterOverlay}></div>
